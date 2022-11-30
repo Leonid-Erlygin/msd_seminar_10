@@ -1,1 +1,1 @@
-python cpc/train.py --pathDB /app/data/LibriSpeech --pathCheckpoint /app/data/checkpoints --pathTrain /app/data/LibriSpeech/train_split.txt --pathVal /app/data/LibriSpeech/test_split.txt --file_extension flac --normMode batchNorm --rnnMode linear
+python cpc/train.py --pathDB /app/data/LibriSpeech --pathCheckpoint /app/data/checkpoints --pathTrain /app/data/LibriSpeech/train_split_small.txt --pathVal /app/data/LibriSpeech/test_split_small.txt --file_extension flac --normMode batchNorm --rnnMode linear
