@@ -50,4 +50,6 @@ RUN curl -sLo ~/miniconda.sh https://repo.continuum.io/miniconda/Miniconda3-py39
  && rm /app/environment.yml \
  && conda clean -ya
 
+RUN pip install torchaudio==0.10.2+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+
 

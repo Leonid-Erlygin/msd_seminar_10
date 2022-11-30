@@ -19,4 +19,4 @@ dependencies:
   - pip:
     - progressbar2
     - matplotlib
-    - torchaudio==0.10.2+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+    - torchaudio==0.10.2
