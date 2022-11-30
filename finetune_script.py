@@ -65,10 +65,10 @@ db_val = AudioBatchData(args.pathDB, args.size_window, seq_val,
 batch_size = args.batchSizeGPU * args.nGPU
 
 train_loader = db_train.getDataLoader(batch_size, "uniform", True,
-                                        numWorkers=0)
+                                        numWorkers=1)
 
 val_loader = db_val.getDataLoader(batch_size, 'sequential', False,
-                                    numWorkers=0)
+                                    numWorkers=1)
 
 
 
@@ -90,6 +90,9 @@ optimizer = torch.optim.Adam(g_params, lr=args.lr,
                                 betas=(args.beta1, args.beta2),
                                 eps=args.epsilon)
 
+
+from pathlib import Path
+import json
 # Checkpoint directory
 args.pathCheckpoint = Path(args.pathCheckpoint)
 args.pathCheckpoint.mkdir(exist_ok=True)
