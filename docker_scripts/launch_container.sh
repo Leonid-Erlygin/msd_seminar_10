@@ -1,1 +1,1 @@
-docker run -d --user 1133:1134 --rm -it --init -v /home/l.erlygin/sk_seminars/CPC_audio:/app --gpus all cpc bash
+docker run -d --user 1001:1001 --rm -it --init -v /home/devel/ws.leonid/msd_seminar_10:/app --gpus all cpc bash
