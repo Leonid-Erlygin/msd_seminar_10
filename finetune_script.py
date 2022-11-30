@@ -65,10 +65,10 @@ db_val = AudioBatchData(args.pathDB, args.size_window, seq_val,
 batch_size = args.batchSizeGPU * args.nGPU
 
 train_loader = db_train.getDataLoader(batch_size, "uniform", True,
-                                        numWorkers=6)
+                                        numWorkers=1)
 
 val_loader = db_val.getDataLoader(batch_size, 'sequential', False,
-                                    numWorkers=6)
+                                    numWorkers=1)
 
 
 
