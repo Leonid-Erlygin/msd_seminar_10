@@ -6,6 +6,10 @@ RUN rm -f /etc/apt/sources.list.d/*.list
 # Install some basic utilities
 RUN apt-get update && apt-get install -y \
     curl \
+    wget \
+    sox \
+    libsox-dev \
+    libsox-fmt-all \
     build-essential \
     ca-certificates \
     sudo \

@@ -1,8 +1,8 @@
 outputs
-catboost_info
+
 .vscode
 data
-tsf_data
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

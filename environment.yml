@@ -1,15 +1,16 @@
-name: cpc37
+name: base
 channels:
   - pytorch
   - anaconda
   - conda-forge
   - defaults
 dependencies:
-  - pytorch
-  - torchvision
-  - cudatoolkit=9.2
+  - pytorch::pytorch=1.10.2=py3.9_cuda11.3_cudnn8.2.0_0
+  - pytorch::torchvision=0.11.3=py39_cu113
+  - cudatoolkit=11.3.1
   - psutil
-  - pip
+  - python=3.9.7
+  - pip=21.2.4
   - openblas-devel
   - tqdm
   - nose
@@ -18,4 +19,4 @@ dependencies:
   - pip:
     - progressbar2
     - matplotlib
-    - torchaudio
+    - torchaudio==0.10.2+cu113
