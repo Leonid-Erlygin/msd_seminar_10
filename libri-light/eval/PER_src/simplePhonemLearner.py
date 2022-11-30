@@ -153,6 +153,7 @@ class CTCPhoneCriterion(torch.nn.Module):
         B, S, H = cFeature.size()
         predictions = self.getPrediction(cFeature)
         featureSize /= 4
+        featureSize = featureSize.int()
         predictions = cutData(predictions, featureSize)
         featureSize = torch.clamp(featureSize, max=predictions.size(1))
         label = cutData(label, labelSize)
