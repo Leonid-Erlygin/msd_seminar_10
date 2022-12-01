@@ -1,1 +1,1 @@
-docker run -d --user 1133:1134 --rm -it --init -v /home/l.erlygin/sk_seminars/CPC_audio:/app --gpus all cpc bash
+docker run -d --shm-size=8g --memory=40g --cpus=40 --user 1133:1134 --rm -it --init -v /home/l.erlygin/sk_seminars/CPC_audio:/app --gpus all cpc bash

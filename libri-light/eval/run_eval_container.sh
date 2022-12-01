@@ -1,1 +1,1 @@
-python eval_PER.py train /app/data/librispeech_finetuning /app/data/librispeech_finetuning/phones/10h_phones.txt /app/data/librispeech_finetuning/phones/phones_mapping.json /app/data/checkpoints/model_60kh.pt -o /app/data/trained --batchSize 2
+python eval_PER.py train /app/data/librispeech_finetuning /app/data/librispeech_finetuning/phones/10h_phones.txt /app/data/librispeech_finetuning/phones/phones_mapping.json /app/data/checkpoints/model_60kh.pt -o /app/data/trained --batchSize 8
