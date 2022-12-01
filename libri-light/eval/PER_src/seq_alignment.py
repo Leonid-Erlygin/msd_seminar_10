@@ -130,7 +130,7 @@ def per_step(valLoader,
 
             processes = []
             for b in range(sizeSeq.size(0)):
-                l_ = min(sizeSeq[b] // 4, predictions.size(1))
+                l_ = min(int(sizeSeq[b] // 4), predictions.size(1))
                 s_ = sizePhone[b]
                 p = torch.multiprocessing.Process(target=get_local_per,
                                                   args=(poolData, mutex, predictions[b, :l_].view(l_, -1).numpy(),

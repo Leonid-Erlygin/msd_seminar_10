@@ -1,0 +1,1 @@
+python eval_PER.py per /app/data/trained/checkpoint.pt /app/data/librispeech_finetuning/1h/0/clean /app/data/librispeech_finetuning/phones/1h_phones.txt --file_extension .flac --batchSize 1
